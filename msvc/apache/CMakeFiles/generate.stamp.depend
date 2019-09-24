@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/mapcache-1.8.0/apache/CMakeLists.txt
+C:/Development/op3d_active/mapcache-1.8.0/apache/mod_mapcache-config.h.in
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindAPACHE.cmake

@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|Win32">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|Win32">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88DE9EB8-94CC-3832-928B-9407CB170C87}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>mapcache</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mapcache</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">mapcache</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mapcache</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">mapcache</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mapcache</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">mapcache</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mapcache</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">mapcache</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR="Debug";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR=\"Debug\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1d.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR="Debug";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR=\"Debug\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1d.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR="Debug";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR=\"Debug\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1d.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR="Debug";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;PCRE_STATIC;CMAKE_INTDIR=\"Debug\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1d.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR="Release";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR=\"Release\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR="Release";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR=\"Release\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR="Release";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR=\"Release\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\frmts\vrt;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PROJ_DIR)\src;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(TIFF_DIR)\msvc\libtiff;..\..\$(ZLIB_DIR)\;..\..\$(GEOTIFF_DIR);..\..\$(GEOTIFF_DIR)\libxtiff;..\..\$(MAPSERVER_DIR);..\..\$(MAPSERVER_DIR)\msvc;..\include;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR="Release";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PCRE_STATIC;CMAKE_INTDIR=\"Release\";mapcache_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\$(PNG_DIR);..\..\$(JPEG_DIR);..\..\$(CURL_DIR)\include;..\..\$(APR_DIR)\include;..\..\$(APR_UTIL_DIR)\include;..\..\$(PIXMAN_DIR)\pixman;..\..\$(GDAL_DIR)\frmts;..\..\$(GDAL_DIR)\alg;..\..\$(GDAL_DIR)\gcore;..\..\$(GDAL_DIR)\port;..\..\$(GDAL_DIR)\ogr;..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\$(PCRE_DIR);..\..\$(SQLITE3_DIR);..\..\$(POSTGRES_DIR)\src\interfaces\libpq;..\..\$(POSTGRES_DIR)\src\include;..\..\$(TIFF_DIR)\libtiff;..\..\$(GEOTIFF_DIR);..\..\$(MAPSERVER_DIR);..\include;.\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libpng14.lib;jpeg.lib;libcurl_imp.lib;libapr-1.lib;libaprutil-1.lib;pixman-1.lib;gdal_i.lib;pcre.lib;sqlite3.lib;libpq.lib;libtiff_i.lib;geotiff_i.lib;mapserver.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\$(PNG_DIR)\projects\vstudio\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(JPEG_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(APR_UTIL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PIXMAN_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(PCRE_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(POSTGRES_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(GEOTIFF_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\$(MAPSERVER_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)mapcache.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\axisorder.c" />
+    <ClCompile Include="..\lib\buffer.c" />
+    <ClCompile Include="..\lib\cJSON.c" />
+    <ClCompile Include="..\lib\cache.c" />
+    <ClCompile Include="..\lib\cache_bdb.c" />
+    <ClCompile Include="..\lib\cache_composite.c" />
+    <ClCompile Include="..\lib\cache_couchbase.c" />
+    <ClCompile Include="..\lib\cache_disk.c" />
+    <ClCompile Include="..\lib\cache_fallback.c" />
+    <ClCompile Include="..\lib\cache_memcache.c" />
+    <ClCompile Include="..\lib\cache_multitier.c" />
+    <ClCompile Include="..\lib\cache_rest.c" />
+    <ClCompile Include="..\lib\cache_riak.c" />
+    <ClCompile Include="..\lib\cache_sqlite.c" />
+    <ClCompile Include="..\lib\cache_tiff.c" />
+    <ClCompile Include="..\lib\cache_tokyocabinet.c" />
+    <ClCompile Include="..\lib\configuration.c" />
+    <ClCompile Include="..\lib\configuration_xml.c" />
+    <ClCompile Include="..\lib\connection_pool.c" />
+    <ClCompile Include="..\lib\core.c" />
+    <ClCompile Include="..\lib\dimension.c" />
+    <ClCompile Include="..\lib\dimension_es.c" />
+    <ClCompile Include="..\lib\dimension_pg.c" />
+    <ClCompile Include="..\lib\dimension_sqlite.c" />
+    <ClCompile Include="..\lib\dimension_time.c" />
+    <ClCompile Include="..\lib\ezxml.c" />
+    <ClCompile Include="..\lib\grid.c" />
+    <ClCompile Include="..\lib\hmac-sha.c" />
+    <ClCompile Include="..\lib\http.c" />
+    <ClCompile Include="..\lib\image.c" />
+    <ClCompile Include="..\lib\image_error.c" />
+    <ClCompile Include="..\lib\imageio.c" />
+    <ClCompile Include="..\lib\imageio_jpeg.c" />
+    <ClCompile Include="..\lib\imageio_mixed.c" />
+    <ClCompile Include="..\lib\imageio_png.c" />
+    <ClCompile Include="..\lib\imageio_raw.c" />
+    <ClCompile Include="..\lib\lock.c" />
+    <ClCompile Include="..\lib\service_demo.c" />
+    <ClCompile Include="..\lib\service_kml.c" />
+    <ClCompile Include="..\lib\service_mapguide.c" />
+    <ClCompile Include="..\lib\service_tms.c" />
+    <ClCompile Include="..\lib\service_ve.c" />
+    <ClCompile Include="..\lib\service_wms.c" />
+    <ClCompile Include="..\lib\service_wmts.c" />
+    <ClCompile Include="..\lib\services.c" />
+    <ClCompile Include="..\lib\source.c" />
+    <ClCompile Include="..\lib\source_dummy.c" />
+    <ClCompile Include="..\lib\source_fallback.c" />
+    <ClCompile Include="..\lib\source_gdal.c" />
+    <ClCompile Include="..\lib\source_mapserver.c" />
+    <ClCompile Include="..\lib\source_wms.c" />
+    <ClCompile Include="..\lib\strptime.c" />
+    <ClCompile Include="..\lib\tileset.c" />
+    <ClCompile Include="..\lib\util.c" />
+    <ClInclude Include="..\include\cJSON.h" />
+    <ClInclude Include="..\include\errors.h" />
+    <ClInclude Include="..\include\ezxml.h" />
+    <ClInclude Include="..\include\mapcache.h" />
+    <ClInclude Include="..\include\mapcache_services.h" />
+    <ClInclude Include="..\include\util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

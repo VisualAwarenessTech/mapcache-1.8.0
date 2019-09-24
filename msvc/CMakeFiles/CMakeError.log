@@ -1,0 +1,68 @@
+Determining if the function strncasecmp exists failed with the following output:
+Change Dir: C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_2875c.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strncasecmp /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2875c.dir\Debug\\" /Fd"cmTC_2875c.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _strncasecmp referenced in function _main [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_2875c.vcxproj]
+C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\Debug\cmTC_2875c.exe : fatal error LNK1120: 1 unresolved externals [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_2875c.vcxproj]
+
+
+Determining if the function symlink exists failed with the following output:
+Change Dir: C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_2256e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=symlink /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2256e.dir\Debug\\" /Fd"cmTC_2256e.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _symlink referenced in function _main [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_2256e.vcxproj]
+C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\Debug\cmTC_2256e.exe : fatal error LNK1120: 1 unresolved externals [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_2256e.vcxproj]
+
+
+Determining if the function timegm exists failed with the following output:
+Change Dir: C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_d2de3.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=timegm /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d2de3.dir\Debug\\" /Fd"cmTC_d2de3.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _timegm referenced in function _main [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_d2de3.vcxproj]
+C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\Debug\cmTC_d2de3.exe : fatal error LNK1120: 1 unresolved externals [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_d2de3.vcxproj]
+
+
+Determining if the function strptime exists failed with the following output:
+Change Dir: C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_a1dfa.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m 
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27034 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strptime /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a1dfa.dir\Debug\\" /Fd"cmTC_a1dfa.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+  
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _strptime referenced in function _main [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_a1dfa.vcxproj]
+C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\Debug\cmTC_a1dfa.exe : fatal error LNK1120: 1 unresolved externals [C:\Development\op3d_active\mapcache-1.8.0\msvc\CMakeFiles\CMakeTmp\cmTC_a1dfa.vcxproj]
+
+

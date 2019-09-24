@@ -1,0 +1,38 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/mapcache-1.8.0/CMakeLists.txt
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindAPR.cmake
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindGEOTIFF.cmake
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindMAPSERVER.cmake
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindPCRE.cmake
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindPixman.cmake
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindPostgreSQL.cmake
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindSQLITE.cmake
+C:/Development/op3d_active/mapcache-1.8.0/include/mapcache-config.h.in
+C:/Development/op3d_active/mapcache-1.8.0/include/mapcache-version.h.in
+C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/3.14.3/CMakeCCompiler.cmake
+C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/3.14.3/CMakeRCCompiler.cmake
+C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/3.14.3/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindCURL.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindGDAL.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindJPEG.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPNG.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindTIFF.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/WindowsPaths.cmake

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindGEOS.cmake
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindSQLITE.cmake
+C:/Development/op3d_active/mapcache-1.8.0/contrib/mapcache_detail/CMakeLists.txt
+C:/Development/op3d_active/mapcache-1.8.0/contrib/mapcache_detail/mapcache_detail_config.h.in
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindGDAL.cmake

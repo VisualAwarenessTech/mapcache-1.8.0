@@ -1,0 +1,6 @@
+#ifndef _MAPCACHE_CGI_CONFIG_H
+#define _MAPCACHE_CGI_CONFIG_H
+
+#define USE_FASTCGI 1
+
+#endif

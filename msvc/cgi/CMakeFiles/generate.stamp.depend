@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/mapcache-1.8.0/cgi/CMakeLists.txt
+C:/Development/op3d_active/mapcache-1.8.0/cgi/mapcache-cgi-config.h.in
+C:/Development/op3d_active/mapcache-1.8.0/cmake/FindFCGI.cmake

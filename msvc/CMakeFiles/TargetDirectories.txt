@@ -1,0 +1,13 @@
+C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/mapcache.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/ALL_BUILD.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/CMakeFiles/ZERO_CHECK.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/util/CMakeFiles/mapcache_seed.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/util/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/cgi/CMakeFiles/mapcache.fcgi.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/cgi/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/apache/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/apache/CMakeFiles/mod_mapcache.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/nginx/CMakeFiles/INSTALL.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/contrib/mapcache_detail/CMakeFiles/mapcache_detail.dir
+C:/Development/op3d_active/mapcache-1.8.0/msvc/contrib/mapcache_detail/CMakeFiles/INSTALL.dir
